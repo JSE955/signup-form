@@ -1,3 +1,25 @@
-h1 {
-    color: red;
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    border: 1px solid black;
+    height: 100%;
+}
+
+body {
+    display: flex;
+}
+
+.leftSide {
+    background: url('./images/background.jpg');
+    background-size: cover;
+    width: 40%;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
