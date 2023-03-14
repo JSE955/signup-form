@@ -3,6 +3,10 @@ html, body {
     height: 100%;
 }
 
+p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 div {
     border: 1px solid black;
     height: 100%;
@@ -13,13 +17,54 @@ body {
 }
 
 .leftSide {
-    background: url('./images/background.jpg');
+    background: url('./resources/background.jpg');
     background-size: cover;
     width: 40%;
+}
+
+.logoBanner {
+    height: 200px;
+    background-color: rgba(0,0,0,.5);
+    position: relative;
+    top: 110px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightSide {
     display: flex;
     flex-direction: column;
     width: 60%;
+}
+
+.one {
+    background-color: lightgray;
+}
+
+.one p {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.three {
+    background-color: bisque;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./resources/Norse-Bold.otf);
+}
+
+.logoText {
+    font-family: norse-bold;
+    color: white;
+    font-size: 64px;
+}
+
+img {
+    height: 125px;
+    width: 100px;
 }
