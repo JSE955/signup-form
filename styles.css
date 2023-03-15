@@ -3,12 +3,16 @@ html, body {
     height: 100%;
 }
 
-p {
+p, label, button {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
 div {
-    border: 1px solid black;
     height: 100%;
 }
 
@@ -40,17 +44,32 @@ body {
     width: 60%;
 }
 
+.one, .two, .three {
+    padding-left: 50px;
+}
+
 .one {
     background-color: lightgray;
+    padding-right: 100px;
 }
 
 .one p {
+    position: relative;
+    top: 50px;
+}
+
+.one p, .two p {
     font-weight: bold;
     font-size: 24px;
 }
 
 .three {
-    background-color: bisque;
+    background-color: lightgray;
+}
+
+.three p {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 @font-face {
@@ -67,4 +86,35 @@ body {
 img {
     height: 125px;
     width: 100px;
+}
+
+form {
+    display: flex;
+    gap: 75px;
+}
+
+.formLeft, .formRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    padding: 16px 64px;
+    margin-top: 36px;
+}
+
+a {
+    color: #596D48;
 }
